@@ -1,5 +1,6 @@
 class QuotesController < Rulers::Controller
   def a_quote
+    @test = "success"
     render :a_quote, :noun => :winking
   end
   
