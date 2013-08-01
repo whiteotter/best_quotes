@@ -6,7 +6,7 @@ module BestQuotes
     def call(env)
       if env['PATH_INFO'] == '/'
         # env['PATH_INFO'] = '/quotes/a_quote'
-        return [307, {'Content-Type' => 'text/html', 'Location' => 'quotes/a_quote'}, []]
+        return [307, {'Content-Type' => 'text/html', 'Location' => 'quotes/index'}, []]
       end
       super
     end
